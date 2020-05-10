@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Get In Touch</title>
+      <link href="css/Style.css" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+      <!-----header----->
+      <header class="main-header">
+         <div class="container">
+            <img src="images/instagram.png" alt="instagram logo"/>
+            <img src="images/snapchat.png" alt="snapchat logo"/>
+            <img src="images/tiktok.png" alt="tiktok logo"/>
+            <img src="images/facebook.png" alt=" facebook logo"/>
+            <img src="images/twitter.png" alt="twitter logo"/>
+         </div>
+      </header>
+      <!-----nav----->
+      <ul class="main-nav">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="index_form.html">Get In Touch</a></li>
+         <li class="dropdown">
+            <a href="socialmedia.html">Social Media</a>
+            <ul class="drop-nav">
+               <li><a href="tiktok.html">Tiktok</a></li>
+               <li><a href="instagram.html">Instagram</a></li>
+               <li><a href="snapchat.html">Snapchat</a></li>
+               <li><a href="facebook.html">Facebook</a></li>
+               <li><a href="twitter.html">Twitter</a></li>
+            </ul>
+         </li>
+      </ul>
+      <!-----form----->     
+      <form action="userdata.html" method="get" enctype="multipart/form-data">
+         <h1>Get In Touch</h1>
+         <fieldset>
+            <legend> Please enter your details here </legend>
+            <div class="divA">
+               <label for="Name">Name: </label><br>
+               <input type="text" name="Name" id="name" required>
+            </div>
+            <div class="divA">
+               <label for="Age">Age: </label><br>
+               <input type="number" name="Age" id="age" min="5" max="120">
+            </div>
+            <div class="divA">
+               <label for="Email">Email: </label><br>
+               <input type="email" name="Email" id="Email" required>
+            </div>
+            <h2> Was the website helpful?</h2>
+            <div class="divB">
+               <input type="radio" name="Helpful" id="yes" checked>
+               <label for="yes">Yes </label><br>
+            </div>
+            <div class="divB">
+               <input type="radio" name="Helpful" id="no">
+               <label for="No">No </label><br>
+            </div>
+            <div class="divC">
+               <input type="radio" name="Helpful" id="Somewhat">
+               <label for="Somewhat">Somewhat </label><br>
+            </div>
+            <h2>What did you find most helpful?</h2>
+            <div class="divC">
+               <input type="checkbox" name="Learning how to use certain apps" id="use">
+               <label for="use">Learning how to use certain apps </label><br>
+            </div>
+            <div class="divC">
+               <input type="checkbox" name="Cautions" id="cautions">
+               <label for="cautions">Knowing about the cautions of social media</label><br>
+            </div>
+            <div class="divC">
+               <input type="checkbox" name="Perks" id="perks">
+               <label for="perks">Knowing more about the perks of social media </label><br>
+            </div>
+            <h2>What social media tool did you learn most about?</h2>
+            <div class="divD">
+               <label for="Findout"> Your Choice: </label>
+               <select name="Social Media Tool" id="findout">
+                  <option value="Tiktok">Tiktok</option>
+                  <option value="Instagram">Instagram</option>
+                  <option value="Snapchat">Snapchat</option>
+                  <option value="Facebook">Facebook</option>
+                  <option value="Twitter">Twitter</option>
+               </select>
+            </div>
+            <div class="divE">
+               <label for="Message">Message: </label><br>
+               <textarea name="Message" id="message" placeholder="Let us know some feedback"></textarea>
+            </div>
+         </fieldset>
+         <button type="submit"> Submit </button>
+         <button type="reset"> Reset </button>
+      </form>
+      <!-----footer----->
+      <footer>
+         <ul class="col1">
+            <li><a href="sitemap.html">Site Map</a></li>
+            <li><a href="resources.html">Resources</a></li>
+         </ul>
+         <div class="col2">
+            <p>copyright © 2020. All Rights Reserved</p>
+         </div>
+      </footer>
+   </body>
+</html>

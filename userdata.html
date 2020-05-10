@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Form Results</title>
+      <link href="css/Style.css" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+      <!-----header----->
+      <header class="main-header">
+         <div class="container">
+            <img src="images/instagram.png"/>
+            <img src="images/snapchat.png"/>
+            <img src="images/tiktok.png"/>
+            <img src="images/facebook.png"/>
+            <img src="images/twitter.png"/>
+         </div>
+      </header>
+      <!-----results----->
+      <div class="results">
+         <h3>Thank you for getting in touch!</h3>
+         <p>Your feedback has been recieved. We will read your feedback carefully.</p>
+         <br>
+         <h2>Your submited data:</h2>
+         <div id="userdata"></div>
+         <br>
+         <p><a href="index.html">Homepage</a></p>
+      </div>
+      <script>
+         const dataList = document.getElementById("userdata")
+         new URLSearchParams(window.location.search).forEach((value, name) => {
+             dataList.append(`${name}: ${value}`)
+             dataList.append(document.createElement('br'))
+         })  
+         
+      </script> 
+      <!-----footer----->
+      <footer>
+         <ul class="col1">
+            <li><a href="sitemap.html">Site Map</a></li>
+            <li><a href="resources.html">Resources</a></li>
+         </ul>
+         <div class="col2">
+            <p>Copyright © 2020. All Rights Reserved</p>
+         </div>
+      </footer>
+   </body>
+</html>
